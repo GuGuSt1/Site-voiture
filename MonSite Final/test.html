@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="style2.css">
+<head>
+<div id="menu">
+<ul>
+  <balise id="evija"></balise>
+  <li><a href="#">Item 2</a>
+    <ul>
+      <li><a href="#">Sous-item 1</a></li>
+      <li><a href="#">Sous-item 2</a></li>
+      <li><a href="#">Sous-item 3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Item 3</a></li>
+</ul>
+</div>
+</head>
+<embed height="60" type="audio/midi" width="144" src="audio.mp3" volume="60" loop="false" autostart="true" />
+<audio controls>
+	<source src="soso-maness-petrouchka-clip-officiel-ft-plk.mp3" type="audio/mpeg">
+	Votre navigateur ne supporte pas la balise audio.
+</audio>
+<br><br><br><br><br><br><br><br>
+<form>
+    <label for="first_name">Recherer un prix</label>
+    <input type="search" name="search">
+</form>
+<br><br><br>
+<form>
+  <div>
+    <input type="search" id="maRecherche" name="q"
+    placeholder="Recherche sur le site…" required>
+    <button>Rechercher</button>
+    <span class="validity"></span>
+  </div>
+</form>
+<br><br><br>
+<!DOCTYPE html>
+<html>
+      
+<head>
+    <title>
+        Creating Search Bar using HTML
+        CSS and Javascript
+    </title>
+      
+    <!-- linking the stylesheet(CSS) -->
+    <link rel="stylesheet" type="text/css" href="./style2.css">
+</head>
+  
+<body>
+      <form>
+    <!-- input tag -->
+    <input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="Chercher voitures..">
+		<span class="validity"></span>
+      </form>
+    <!-- ordered list -->
+    <ol id='list'>
+        <li class="animals">Cat</li>
+        <li class="animals">Dog</li>
+        <li class="animals">Elephant</li>
+        <li class="animals">Fish</li>
+        <li class="animals">Gorilla</li>
+        <li class="animals">Monkey</li>
+        <li class="animals">Turtle</li>
+        <li class="animals">Whale</li>
+        <li class="animals">Aligator</li>
+        <li class="animals">Donkey</li>
+        <li class="animals">Horse</li>
+    </ol>
+      
+    <!-- linking javascript -->
+    <script src="./animals.js"></script>
+</body>
+  
+</html>
+<br>
+<br><br><br><br><br><br>
+<p>
+  <label for="choix_bieres_ami">Indiquez le choix de votre ami :</label>
+  <input list="bieres" type="text" id="searchbar" onkeyup="search_animal()" name="search" placeholder="Chercher voitures..">
+  <datalist id="bieres">
+    <option value="Meteor" href="#evija">
+    <option value="Pils">
+    <option value="Kronenbourg">
+    <option value="Grimbergen">
+  </datalist>
+</p>
+<form onSubmit="return allerVersAncre();"> 
+   <input id="nomAncre" type="text" value="Ancre à chercher"/> 
+   <input type="submit" value="Chercher"> 
+</form> 
+
+<script type="text/javascript"> 
+   function allerVersAncre(){ 
+      var ancre = document.getElementById('nomAncre').value; 
+      var liensExistant = document.getElementsByName(ancre); 
+      if (liensExistant.length > 0){ 
+         window.location = "#"+ancre; 
+      } 
+       return false; // Pour éviter de valider le formulaire 
+   } 
+</script>
+<br><br><br><br>
+
+<object id="video1" width=320 height=240 classid="CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95"
+codebase="http://activex.microsoft.com/activex/controls/
+mplayer/en/nsmp2inf.cab#Version=6,4,5,715"
+standby="Chargement..."
+type="application/x-oleobject">
+<param name="super_moine" value="super_moine.avi">
+<param name="AutoStart=true" value="false">
+<embed type="application/x-mplayer2"
+pluginspage = "http://www.microsoft.com/Windows/MediaPlayer/"
+src="super_moine.avi"
+name="video1" width=320 height=240 AutoStart=false>
+</embed>
+</object>
